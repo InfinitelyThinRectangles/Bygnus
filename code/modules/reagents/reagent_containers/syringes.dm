@@ -22,7 +22,7 @@
 	var/mode = SYRINGE_DRAW
 	var/image/filling //holds a reference to the current filling overlay
 	var/visible_name = "a syringe"
-	var/time = 30
+	var/time = 5
 
 /obj/item/weapon/reagent_containers/syringe/Initialize(var/mapload)
 	. = ..()
