@@ -71,8 +71,10 @@
 		if(distance > user.psi.get_rank(PSI_PSYCHOKINESIS))
 			to_chat(user, "<span class='warning'>Your telekinetic power won't reach that far.</span>")
 			return FALSE
-
-		if(istype(target, /mob) || istype(target, /obj))
+		if(istype(target, /mob))
+			to_chat(user, SPAN_WARNING("Your powers cannot affect complex organics."))
+			return FALSE
+		if(istype(target, /obj))
 			var/obj/item/psychic_power/telekinesis/tk = new(user)
 			if(tk.set_focus(target))
 				tk.sparkle()
