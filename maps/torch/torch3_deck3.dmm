@@ -20945,13 +20945,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Th" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "eva_outer";
-	locked = 1;
-	name = "EVA External Access"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai_monitored/storage/eva)
 "Ti" = (
@@ -21289,17 +21283,11 @@
 /turf/simulated/floor/wood/maple,
 /area/crew_quarters/mess)
 "Uh" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "eva_inner";
-	locked = 1;
-	name = "EVA Internal Access"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
 	icon_state = "intact"
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ai_monitored/storage/eva)
 "Ui" = (

@@ -1248,14 +1248,8 @@
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/firstdeck/forestarboard)
 "acc" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "bridgestarboard_outer";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/forestarboard)
 "acd" = (
@@ -2254,14 +2248,8 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/firstdeck/forestarboard)
 "adT" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "bridgestarboard_inner";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/forestarboard)
 "adU" = (

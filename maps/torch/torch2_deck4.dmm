@@ -260,17 +260,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/hallway/primary/fourthdeck/aft)
-"aK" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "admin_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/plating,
-/area/hallway/primary/fourthdeck/aft)
 "aL" = (
 /obj/machinery/porta_turret/exterior/dagon,
 /turf/simulated/floor/airless,
@@ -1061,14 +1050,8 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fourthdeck/fore)
 "cu" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "merchant_shuttle_station_exterior";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "cv" = (
@@ -1762,17 +1745,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/laundry)
-"dK" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "merchant_shuttle_station_interior";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/plating,
-/area/hallway/primary/fourthdeck/fore)
 "dL" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/plating,
@@ -7971,18 +7943,10 @@
 /turf/simulated/floor/tiled,
 /area/security/infantry/com)
 "qP" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9;
-	icon_state = "warning"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "qQ" = (
@@ -7992,47 +7956,30 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 23
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "qR" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
 /obj/machinery/airlock_sensor{
 	frequency = 1331;
 	id_tag = "nuke_shuttle_dock_sensor";
 	pixel_x = 0;
 	pixel_y = 24
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 2;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "qS" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1;
-	icon_state = "warning"
-	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "qT" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 5
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	dir = 2;
 	frequency = 1331;
@@ -8041,6 +7988,7 @@
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "qU" = (
@@ -8409,33 +8357,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage/upper)
-"sk" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8;
-	icon_state = "warning"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8;
-	icon_state = "map"
-	},
-/turf/simulated/floor,
-/area/hallway/primary/fourthdeck/fore)
-"sl" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/hallway/primary/fourthdeck/fore)
 "sm" = (
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /obj/item/device/radio/beacon,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "sn" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 5;
+	icon_state = "intact"
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "so" = (
@@ -8443,13 +8375,7 @@
 	dir = 4;
 	icon_state = "intact"
 	},
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "nuke_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/fourthdeck/fore)
 "sp" = (
@@ -9152,58 +9078,25 @@
 /area/space)
 "tM" = (
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "nuke_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "tN" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 10
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
 /obj/structure/sign/double/solgovflag/left{
 	pixel_y = -32
 	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "tO" = (
-/obj/effect/floor_decal/industrial/warning,
 /obj/structure/sign/double/solgovflag/right{
 	pixel_y = -32
 	},
-/turf/simulated/floor,
-/area/hallway/primary/fourthdeck/fore)
-"tP" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
-/turf/simulated/floor,
-/area/hallway/primary/fourthdeck/fore)
-"tQ" = (
-/obj/effect/floor_decal/industrial/warning,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "tR" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 6
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume{
-	dir = 1;
-	frequency = 1331;
-	id_tag = "nuke_shuttle_dock_pump"
-	},
+/obj/effect/catwalk_plated,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "tS" = (
@@ -12877,13 +12770,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "Ho" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "skipjack_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Hr" = (
@@ -12932,16 +12819,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
 "HA" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "skipjack_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
 /obj/machinery/shield_diffuser,
 /obj/effect/shuttle_landmark/ascent_seedship/dock/two,
 /obj/effect/shuttle_landmark/skrellscoutship/dock,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "HB" = (
@@ -13728,13 +13609,7 @@
 /area/maintenance/fourthdeck/port)
 "Kh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "rescue_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "Ki" = (
@@ -14183,13 +14058,6 @@
 /area/quartermaster/storage/upper)
 "LD" = (
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "nuke_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
 /obj/machinery/access_button{
 	command = "cycle_exterior";
 	frequency = 1331;
@@ -14200,6 +14068,7 @@
 	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"))
 	},
 /obj/effect/shuttle_landmark/rawl/torchdock,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor,
 /area/hallway/primary/fourthdeck/fore)
 "LG" = (
@@ -15547,13 +15416,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "PD" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "nuke_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/hallway/primary/fourthdeck/fore)
 "PE" = (
@@ -17144,16 +17007,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "TN" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "rescue_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
 /obj/machinery/shield_diffuser,
 /obj/effect/shuttle_landmark/skrellscoutship/altdock,
 /obj/effect/shuttle_landmark/ascent_seedship/dock,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TO" = (
@@ -17230,15 +17087,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "TX" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1380;
-	icon_state = "closed";
-	id_tag = "admin_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock"
-	},
 /obj/machinery/shield_diffuser,
 /obj/effect/shuttle_landmark/ascent_seedship/dock/three,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "TY" = (
@@ -28670,7 +28521,7 @@ Rp
 Rp
 WZ
 qP
-sk
+tR
 tN
 WZ
 Rp
@@ -28872,7 +28723,7 @@ ng
 ng
 WZ
 qQ
-sl
+tR
 tO
 WZ
 ng
@@ -29075,7 +28926,7 @@ ot
 le
 qR
 sm
-tP
+tR
 tS
 bk
 xO
@@ -29276,8 +29127,8 @@ ni
 ou
 le
 qS
-sl
-tQ
+tR
+tR
 vj
 wz
 xP
@@ -31484,7 +31335,7 @@ aa
 bM
 cu
 dh
-dK
+Ho
 el
 fk
 gb
@@ -43800,7 +43651,7 @@ ai
 TX
 UT
 QM
-aK
+Kh
 eR
 bJ
 sd
