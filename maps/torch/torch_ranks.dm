@@ -152,9 +152,6 @@
 		/datum/mil_rank/fleet/o6,
 		/datum/mil_rank/fleet/o7,
 		/datum/mil_rank/fleet/o8,
-		/datum/mil_rank/fleet/o9,
-		/datum/mil_rank/fleet/o10,
-		/datum/mil_rank/fleet/o10_alt
 	)
 
 	spawn_rank_types = list(
@@ -453,37 +450,12 @@
 	cit_rank = 5
 
 /datum/mil_rank/fleet/o8
-	name = "Rear Admiral"
+	name = "Admiral"
 	name_short = "RADM"
 	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o8, /obj/item/clothing/accessory/solgov/specialty/officer)
 	sort_order = 18
 	pow_cat = 5
 	cit_rank = 5
-
-/datum/mil_rank/fleet/o9
-	name = "Vice Admiral"
-	name_short = "VADM"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o9, /obj/item/clothing/accessory/solgov/specialty/officer)
-	sort_order = 19
-	pow_cat = 5
-	cit_rank = 5
-
-/datum/mil_rank/fleet/o10
-	name = "Admiral"
-	name_short = "ADM"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10, /obj/item/clothing/accessory/solgov/specialty/officer)
-	sort_order = 20
-	pow_cat = 5
-	cit_rank = 5
-
-/datum/mil_rank/fleet/o10_alt
-	name = "Fleet Admiral"
-	name_short = "FADM"
-	accessory = list(/obj/item/clothing/accessory/solgov/rank/fleet/flag/o10_alt, /obj/item/clothing/accessory/solgov/specialty/officer)
-	sort_order = 20
-	pow_cat = 5
-	cit_rank = 5
-
 
 /*
  *  EC

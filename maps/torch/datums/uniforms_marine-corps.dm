@@ -3,6 +3,7 @@
 	var/utility_under_tan = null
 	var/utility_hat_urban = null
 	var/utility_hat_tan = null
+/*
 
 /decl/hierarchy/mil_uniform/marine_corps
 	name = "Master marine corps outfit"
@@ -499,3 +500,4 @@
 	dress_over = /obj/item/clothing/suit/dress/solgov/army/command
 	dress_hat = /obj/item/clothing/head/solgov/dress/army/command
 	dress_extra = list(/obj/item/clothing/head/beret/solgov, /obj/item/weapon/storage/belt/holster/sheath/marine)
+*/
