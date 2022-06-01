@@ -1,4 +1,4 @@
-/////////
+ /////////
 // Cadet
 /////////
 /datum/job/seccadet
@@ -22,16 +22,9 @@
 	                    SKILL_FORENSICS   = SKILL_MAX)
 	skill_points = 16
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
-	allowed_branches = list(
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/marine_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/e2,
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3
-	)
+	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_ranks = list(/datum/mil_rank/fleet/e1)
+
 	access = list(access_security, access_brig, access_maint_tunnels,
 						access_external_airlocks, access_emergency_storage,
 			            access_eva, access_sec_doors, access_solgov_crew)
@@ -42,22 +35,19 @@
 	return "You're a new trainee aboard the [GLOB.using_map.full_name]. Everyone is your senior, and as such, you'd best listen to them."
 
 /datum/job/squad_lead
-	allowed_branches = list(/datum/mil_branch/marine_corps)
-	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e6,
-		/datum/mil_rank/marine_corps/e7
-	)
+	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_ranks = list(/datum/mil_rank/fleet/o1)
 
 /datum/job/squad_lead
 	title = "Squad Lead"
-	department = "Infantry"
-	department_flag = INF
+	department = "Exploration"
+	department_flag = EXP
 	head_position = 1
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 
 	supervisors = "the highest ranking Marine and SolGov Command"
-	selection_color = "#557e38"
+	selection_color = "#68099e"
 	minimal_player_age = 12
 	economic_power = 7
 	skill_points = 26
@@ -83,12 +73,12 @@
 
 /datum/job/combat_tech
 	title = "Combat Technician"
-	supervisors = "the Squad Leader"
-	department = "Infantry"
-	department_flag = INF
+	supervisors = "the Pathfinder"
+	department = "Exploration"
+	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = "#557e38"
+	selection_color = "#68099e"
 	economic_power = 4
 	minimal_player_age = 8
 	skill_points = 24
@@ -106,35 +96,24 @@
 						SKILL_CONSTRUCTION = SKILL_MAX,
 						SKILL_ELECTRICAL   = SKILL_MAX)
 
-	allowed_branches = list(/datum/mil_branch/marine_corps)
-	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
-		)
-	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+	allowed_branches = list(/datum/mil_branch/fleet,)
+	allowed_ranks = list(/datum/mil_rank/fleet/e3)
+	access = list(access_maint_tunnels, access_explorer, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva, access_inftech)
 	alt_titles = list(
 		"Combat Engineer")
 
-/datum/job/combat_tech/is_position_available()
-	if(..())
-		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
-				return TRUE
-	return FALSE
-
 /datum/job/combat_tech/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if no Squad Leader is present."
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Technician in the squad. Your duty is to provide both firepower and demolitions as required. You may assume Command if you believe the squad requires it."
 
 /datum/job/combat_medic
-	title = "Combat Medic"
-	supervisors = "the Squad Leader"
-	department = "Infantry"
-	department_flag = INF
+	title = "Combat Lifesaver"
+	supervisors = "the Pathfinder"
+	department = "Exploration"
+	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = "#557e38"
+	selection_color = "#68099e"
 	economic_power = 4
 	minimal_player_age = 8
 	skill_points = 24
@@ -151,40 +130,29 @@
 					SKILL_WEAPONS      = SKILL_MAX,
 					SKILL_CHEMISTRY    = SKILL_MAX)
 
-	allowed_branches = list(
-		/datum/mil_branch/fleet,
-		/datum/mil_branch/marine_corps
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/fleet/e3,
-		/datum/mil_rank/fleet/e4,
-		/datum/mil_rank/fleet/e5,
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4,
-		/datum/mil_rank/marine_corps/e5
-		)
-	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_ranks = list(/datum/mil_rank/fleet/e3)
+	access = list(access_maint_tunnels, access_explorer, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva, access_infmed)
 
 /datum/job/combat_medic/is_position_available()
 	if(..())
 		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
+			if(M.client && M.mind && M.mind.assigned_role == "Pathfinder")
 				return TRUE
 	return FALSE
 
 /datum/job/combat_medic/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Medic in the squad. Your duty is to provide medical assistance as required. You may assume Command if no Squad Leader is present."
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are the singular Combat Medic in the squad. Your duty is to provide medical assistance as required. You may assume command of the team if you believe the situation beckons for it."
 
 /datum/job/grunt
-	title = "Rifleman"
-	department = "Infantry"
-	department_flag = INF
-	total_positions = 3
-	spawn_positions = 3
-	minimal_player_age = 6
-	supervisors = "the Combat Technician and Squad Leader"
-	selection_color = "#557e38"
+	title = "Guardsman"
+	department = "Exploration"
+	department_flag = EXP
+	total_positions = 4
+	spawn_positions = 4
+	selection_color = "#68099e"
+	supervisors = "Pathfinder"
 	skill_points = 18
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/infantry
@@ -197,28 +165,15 @@
 						SKILL_EVA		  = SKILL_MAX)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
-	allowed_branches = list(/datum/mil_branch/marine_corps)
+	allowed_branches = list(/datum/mil_branch/fleet)
 	allowed_ranks = list(
-		/datum/mil_rank/marine_corps/e1,
-		/datum/mil_rank/marine_corps/e2,
-		/datum/mil_rank/marine_corps/e3,
-		/datum/mil_rank/marine_corps/e4
+		/datum/mil_rank/fleet/e2,
 	)
-	access = list(access_maint_tunnels, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
+	access = list(access_maint_tunnels, access_explorer, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_infantry,
 			            access_aquila, access_eva)
-	alt_titles = list(
-		"Grenadier",
-		"Assaultman")
-
-/datum/job/grunt/is_position_available()
-	if(..())
-		for(var/mob/M in GLOB.player_list)
-			if(M.client && M.mind && M.mind.assigned_role == "Squad Lead")
-				return TRUE
-	return FALSE
 
 /datum/job/grunt/get_description_blurb()
-	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> - You are a Marine! Your duty is to listen to the Squad Leader. If they're not present, the Combat Technician may pull rank. Do your best not to die, while also taking orders. Oorah!"
+	return "<span class='warning'>You are NOT Security. Ignoring this will get you job banned, or worse.</span> Do your best not to die, while also taking orders."
 
 /datum/job/psiadvisor
 	title = "Psionic Advisor"
@@ -369,3 +324,40 @@
 
 /datum/job/lawyer/get_description_blurb()
 	return "You are a lawyer. Your job is to prosecute or defend your client depending on the circumstances."
+
+/datum/job/field_researcher
+	title = "Field Researcher"
+	total_positions = 2
+	spawn_positions = 2
+	selection_color = "#68099e"
+	supervisors = "the Pathfinder and Chief Science Officer"
+	economic_power = 10
+	minimum_character_age = list(SPECIES_HUMAN = 25)
+	minimal_player_age = 0
+	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
+	                    SKILL_COMPUTER    = SKILL_BASIC,
+	                    SKILL_DEVICES     = SKILL_BASIC,
+	                    SKILL_SCIENCE     = SKILL_ADEPT,
+						SKILL_CHEMISTRY   = SKILL_BASIC)
+
+	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
+	                    SKILL_DEVICES     = SKILL_MAX,
+	                    SKILL_SCIENCE     = SKILL_MAX,
+						SKILL_CHEMISTRY   = SKILL_MAX)
+
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
+	allowed_branches = list(
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/solgov
+	)
+	allowed_ranks = list(,
+		/datum/mil_rank/ec/o1,
+		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
+		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
+	)
+
+	access = list(access_tox, access_maint_tunnels, access_tox_storage, access_research, access_petrov_maint, access_petrov, access_petrov_helm,
+						access_mining_office, access_mining_station, access_xenobiology, access_guppy_helm,
+						access_xenoarch, access_nanotrasen, access_expedition_shuttle, access_guppy, access_solgov_crew, access_hangar,
+						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_robotics, access_robotics_engineering)
+	skill_points = 20

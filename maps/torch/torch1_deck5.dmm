@@ -3275,9 +3275,13 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/isolation)
 "fH" = (
-/obj/item/weapon/stool,
-/turf/simulated/floor/tiled,
-/area/quartermaster/exploration)
+/obj/effect/floor_decal/corner/brown/half{
+	dir = 4;
+	icon_state = "bordercolorhalf"
+	},
+/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full,
+/turf/simulated/floor/tiled/monotile,
+/area/hallway/primary/fifthdeck/fore)
 "fI" = (
 /obj/structure/handrai{
 	dir = 4;
@@ -3400,16 +3404,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "fW" = (
-/obj/effect/floor_decal/corner/mauve/half{
-	dir = 4;
-	icon_state = "bordercolorhalf"
+/obj/structure/closet/secure_closet/guncabinet{
+	req_access = list("ACCESS_TORCH_PATHFINDER")
 	},
-/obj/machinery/computer/modular/preset/civilian{
-	dir = 8;
-	icon_state = "console"
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/obj/item/weapon/gun/projectile/automatic/l6_saw/sec,
+/obj/item/weapon/gun/projectile/rocket/recoilless/sec,
+/turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "fX" = (
 /turf/simulated/floor/tiled/techfloor,
@@ -4913,26 +4913,11 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/recreation)
 "iO" = (
-/obj/structure/table/steel,
-/obj/item/weapon/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
+/obj/machinery/door/airlock/glass/science{
+	name = "Exploration Equipment"
 	},
-/obj/item/weapon/folder/blue,
-/obj/effect/floor_decal/corner/mauve/mono,
-/obj/machinery/light_switch{
-	pixel_x = 22;
-	pixel_y = 22
-	},
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/machinery/camera/network/exploration{
-	c_tag = "Exploration Equipment";
-	dir = 8;
-	icon_state = "camera"
-	},
-/turf/simulated/floor/tiled/monotile,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/exploration)
 "iP" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -4966,11 +4951,14 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/hangar)
 "iT" = (
-/obj/machinery/door/airlock/glass/science{
-	name = "Exploration Equipment"
+/obj/effect/floor_decal/corner/mauve{
+	dir = 5;
+	icon_state = "corner_white"
 	},
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel_ridged,
+/obj/machinery/door/window/westleft{
+	req_access = list("ACCESS_TORCH_PATHFINDER")
+	},
+/turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "iU" = (
 /obj/effect/catwalk_plated,
@@ -5710,16 +5698,13 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "kn" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8
+	},
 /obj/structure/table/steel,
-/obj/machinery/recharger,
-/obj/item/clothing/glasses/science,
-/obj/item/clothing/glasses/science,
-/obj/item/clothing/glasses/science,
-/obj/item/device/geiger,
-/obj/item/device/geiger,
-/obj/effect/floor_decal/corner/mauve{
-	dir = 5;
-	icon_state = "corner_white"
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
@@ -5729,16 +5714,37 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kp" = (
-/obj/machinery/computer/ship/navigation{
-	dir = 8;
-	icon_state = "computer"
+/obj/structure/closet/secure_closet/guncabinet{
+	req_access = list("ACCESS_TORCH_PATHFINDER")
 	},
-/obj/effect/floor_decal/corner/mauve/half{
-	dir = 4;
-	icon_state = "bordercolorhalf"
-	},
-/obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/monotile,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle/sec/large,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/mil_rifle,
+/obj/item/ammo_magazine/box/machinegun,
+/obj/item/ammo_magazine/box/machinegun,
+/obj/item/ammo_magazine/box/machinegun,
+/obj/item/ammo_magazine/box/machinegun,
+/obj/item/weapon/storage/box/smokes,
+/obj/item/weapon/storage/box/smokes,
+/turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "kq" = (
 /obj/machinery/door/firedoor,
@@ -5829,57 +5835,41 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "ky" = (
-/obj/structure/table/rack,
-/obj/item/stack/flag/green,
-/obj/item/stack/flag/green,
-/obj/item/stack/flag/green,
-/obj/item/stack/flag/green,
-/obj/item/stack/flag/red,
-/obj/item/stack/flag/red,
-/obj/item/stack/flag/red,
-/obj/item/stack/flag/red,
-/obj/item/device/scanner/mining,
-/obj/item/device/scanner/mining,
-/obj/item/device/scanner/mining,
-/obj/item/device/scanner/mining,
+/obj/structure/closet/secure_closet/guncabinet{
+	req_access = list("ACCESS_TORCH_PATHFINDER")
+	},
+/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,
+/obj/item/weapon/gun/projectile/automatic/merc_smg/sec,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full,
+/obj/item/weapon/storage/box/ammo/shotgunammo/buckshot/full,
+/obj/item/ammo_magazine/smg,
+/obj/item/ammo_magazine/smg,
+/obj/item/ammo_magazine/smg,
+/obj/item/ammo_magazine/smg,
+/turf/simulated/floor/tiled,
+/area/quartermaster/exploration)
+"kz" = (
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/disposal,
 /obj/effect/floor_decal/corner/mauve{
 	dir = 10;
 	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
-"kz" = (
-/obj/structure/table/rack,
-/obj/item/device/scanner/xenobio,
-/obj/item/device/scanner/xenobio,
-/obj/item/device/scanner/xenobio,
-/obj/item/device/scanner/xenobio,
-/obj/item/weapon/storage/plants,
-/obj/item/weapon/storage/plants,
-/obj/item/weapon/storage/plants,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/item/device/scanner/plant,
-/obj/effect/floor_decal/corner/mauve{
-	dir = 10;
-	icon_state = "corner_white"
-	},
-/obj/machinery/alarm{
-	dir = 8;
-	icon_state = "alarm0";
-	pixel_x = 21
-	},
-/turf/simulated/floor/tiled/monotile,
-/area/quartermaster/exploration)
 "kA" = (
-/obj/effect/floor_decal/corner/mauve/half{
-	dir = 4;
-	icon_state = "bordercolorhalf"
+/obj/structure/closet/secure_closet/guncabinet{
+	req_access = list("ACCESS_TORCH_PATHFINDER")
 	},
-/obj/structure/table/steel,
-/obj/item/device/camera,
-/turf/simulated/floor/tiled/monotile,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec/lmg,
+/obj/item/weapon/gun/projectile/rocket/oneuse/marine,
+/obj/item/weapon/gun/projectile/automatic/bullpup_rifle/sec,
+/turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "kB" = (
 /obj/machinery/door/airlock/glass/science{
@@ -5977,13 +5967,10 @@
 /turf/simulated/floor/pool,
 /area/crew_quarters/recreation)
 "kL" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 8
-	},
-/obj/machinery/disposal,
-/obj/effect/floor_decal/corner/mauve{
-	dir = 10;
-	icon_state = "corner_white"
+/obj/structure/table/steel,
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
 	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
@@ -5997,6 +5984,26 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/monotile,
+/area/quartermaster/exploration)
+"kN" = (
+/obj/structure/table/rack,
+/obj/item/stack/flag/green,
+/obj/item/stack/flag/green,
+/obj/item/stack/flag/green,
+/obj/item/stack/flag/green,
+/obj/item/stack/flag/red,
+/obj/item/stack/flag/red,
+/obj/item/stack/flag/red,
+/obj/item/stack/flag/red,
+/obj/item/device/scanner/mining,
+/obj/item/device/scanner/mining,
+/obj/item/device/scanner/mining,
+/obj/item/device/scanner/mining,
+/obj/effect/floor_decal/corner/mauve{
+	dir = 10;
+	icon_state = "corner_white"
+	},
+/turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "kP" = (
 /obj/machinery/suit_storage_unit/explorer,
@@ -8116,11 +8123,22 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "or" = (
-/obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/rack,
-/obj/item/weapon/rig/gas,
-/obj/item/weapon/rig/gas,
-/obj/item/weapon/rig/gas,
+/obj/item/device/scanner/xenobio,
+/obj/item/device/scanner/xenobio,
+/obj/item/device/scanner/xenobio,
+/obj/item/device/scanner/xenobio,
+/obj/item/weapon/storage/plants,
+/obj/item/weapon/storage/plants,
+/obj/effect/floor_decal/corner/mauve{
+	dir = 10;
+	icon_state = "corner_white"
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 21
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "os" = (
@@ -11922,6 +11940,17 @@
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/petrov/hallwaya)
+"wQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/table/steel,
+/obj/structure/window/reinforced{
+	dir = 8;
+	health = 1e+006
+	},
+/turf/simulated/floor/tiled,
+/area/quartermaster/exploration)
 "wS" = (
 /obj/structure/closet/athletic_mixed,
 /obj/structure/window/reinforced{
@@ -16273,6 +16302,10 @@
 /area/exploration_shuttle/cargo)
 "Pd" = (
 /obj/random_multi/single_item/runtime,
+/obj/structure/table/steel,
+/obj/machinery/door/window/westleft{
+	req_access = list("ACCESS_TORCH_PATHFINDER")
+	},
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "Pe" = (
@@ -32143,7 +32176,7 @@ aW
 er
 fl
 ct
-ii
+fH
 hS
 ii
 rd
@@ -33159,7 +33192,7 @@ MR
 jO
 rS
 oY
-hl
+iO
 hw
 iu
 kf
@@ -33361,11 +33394,11 @@ MR
 jO
 rS
 oU
+hl
 iT
-hw
-kg
+kn
 Pd
-ki
+wQ
 kL
 hl
 iP
@@ -33564,15 +33597,15 @@ po
 rT
 oW
 hl
-kn
-fH
+hz
+hz
 hz
 kw
 ky
 hl
 iQ
 hz
-hz
+kN
 kI
 kv
 eu
@@ -33766,7 +33799,7 @@ qJ
 aF
 oX
 eu
-iO
+hz
 kp
 fW
 kA

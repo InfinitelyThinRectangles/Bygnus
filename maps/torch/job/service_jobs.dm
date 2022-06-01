@@ -1,4 +1,4 @@
-/datum/job/chaplain
+datum/job/chaplain
 	title = "Chaplain"
 	department = "Service"
 	department_flag = SRV

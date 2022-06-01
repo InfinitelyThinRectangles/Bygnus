@@ -19,19 +19,6 @@
 	path = /obj/item/clothing/accessory/armband/solgov/mp
 	allowed_roles = SECURITY_ROLES
 
-/datum/gear/accessory/smc_patch
-	display_name = "Marine Corps patch"
-	path = /obj/item/clothing/accessory/solgov/smc_patch
-	allowed_branches = list(/datum/mil_branch/marine_corps)
-	cost = 0
-	whitelisted = list(SPECIES_HUMAN, SPECIES_IPC)
-
-/datum/gear/accessory/smc_patch_xenos
-	display_name = "Marine Corps patch (xenoic division)"
-	path = /obj/item/clothing/accessory/solgov/smc_patch/xeno
-	cost = 0
-	allowed_branches = list(/datum/mil_branch/marine_corps)
-
 /datum/gear/tactical/civ_tag
 	display_name = "Civilian tag"
 	path = /obj/item/clothing/accessory/armor/tag/civ
@@ -45,13 +32,6 @@
 /datum/gear/tactical/med_tag/alt
 	display_name = "Medical tag, alt"
 	path = /obj/item/clothing/accessory/armor/tag/civ/med
-
-/datum/gear/accessory/tags/marine
-	display_name = "dog tags, solar marine corps"
-	description = "Plain identification tags made from a durable metal. This one is issued to marines."
-	path = /obj/item/clothing/accessory/badge/solgov/tags/marine
-	allowed_branches = list(/datum/mil_branch/marine_corps)
-	cost = 0
 
 /datum/gear/accessory/tags/fleet
 	display_name = "dog tags, expeditionary fleet"

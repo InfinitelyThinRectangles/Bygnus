@@ -5,7 +5,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
-	supervisors = "the Chief Science Officer"
+	supervisors = "the Commanding Officer"
 	selection_color = "#68099e"
 	minimal_player_age = 4
 	economic_power = 7
@@ -40,12 +40,12 @@
 
 /datum/job/nt_pilot
 	title = "Shuttle Pilot"
-	supervisors = "the Pathfinder"
-	department = "Exploration"
+	department = "Support"
+	department_flag = SPT
 	department_flag = EXP
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = "#68099e"
+	selection_color = "#2f2f7f"
 	economic_power = 10
 	minimal_player_age = 0
 	minimum_character_age = list(SPECIES_HUMAN = 24)
@@ -57,9 +57,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7
+		/datum/mil_rank/fleet/o1,
 	)
 
 	access = list(
@@ -77,7 +75,7 @@
 	department = "Exploration"
 	department_flag = EXP
 	total_positions = 5
-	spawn_positions = 5
+	spawn_positions = 2
 	supervisors = "the Commanding Officer, Executive Officer, and Pathfinder"
 	selection_color = "#68099e"
 	minimum_character_age = list(SPECIES_HUMAN = 18)

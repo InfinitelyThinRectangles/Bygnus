@@ -14944,6 +14944,14 @@
 /obj/machinery/oxygen_pump{
 	pixel_x = -32
 	},
+/obj/effect/floor_decal/techfloor{
+	dir = 8;
+	icon_state = "techfloor_edges"
+	},
+/obj/effect/floor_decal/techfloor{
+	dir = 4;
+	icon_state = "techfloor_edges"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarport)
 "Eh" = (

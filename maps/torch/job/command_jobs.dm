@@ -430,12 +430,8 @@
 	minimal_player_age = 2
 	minimum_character_age = list(SPECIES_HUMAN = 21, SPECIES_CUSTOM = 23)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sol_bodyguard
-	allowed_branches = list(/datum/mil_branch/spacefbi, /datum/mil_branch/marine_corps)
-	allowed_ranks = list(/datum/mil_rank/sol/agent, /datum/mil_rank/marine_corps/e6,
-		/datum/mil_rank/marine_corps/e7,
-		/datum/mil_rank/marine_corps/w1,
-		/datum/mil_rank/marine_corps/w2,
-		/datum/mil_rank/marine_corps/w3)
+	allowed_branches = list(/datum/mil_branch/spacefbi)
+	allowed_ranks = list(/datum/mil_rank/sol/agent)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
@@ -447,8 +443,7 @@
 	                    SKILL_BUREAUCRACY = SKILL_MAX)
 	alt_titles = list(
 		"Sol Federal Assistant",
-		"Sol Federal Chaperone",
-		"Marine Embassy Guard")
+		"Sol Federal Chaperone",)
 	skill_points = 24
 	access = list(access_representative, access_maint_tunnels, access_bridge, access_solgov_crew, access_sec_guard)
 	defer_roundstart_spawn = TRUE

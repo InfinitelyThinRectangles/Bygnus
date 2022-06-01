@@ -3,8 +3,8 @@
 	department = "Science"
 	department_flag = SCI
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Chief Science Officer"
 	selection_color = "#633d63"
 	economic_power = 12
