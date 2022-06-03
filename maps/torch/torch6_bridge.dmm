@@ -1091,16 +1091,6 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/solrep)
 "bW" = (
-/obj/machinery/door/airlock/external{
-	autoset_access = 0;
-	density = 1;
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "aquila_shuttle_outer";
-	locked = 1;
-	name = "Byakhee External Access";
-	req_access = list("ACCESS_TORCH_CREW")
-	},
 /obj/machinery/shield_diffuser,
 /obj/structure/cable{
 	d1 = 4;
@@ -1108,6 +1098,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
 "bX" = (
@@ -3649,21 +3640,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
-	autoset_access = 0;
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "aquila_shuttle_inner";
-	locked = 1;
-	name = "Byakhee External Access";
-	req_access = list("ACCESS_TORCH_CREW")
-	},
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8";
 	pixel_x = 0
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/aquila/airlock)
 "ga" = (
@@ -4242,29 +4225,17 @@
 /area/crew_quarters/heads/office/xo)
 "gV" = (
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "bridge_eva_outer";
-	locked = 1;
-	name = "Bridge EVA External Access"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "gW" = (
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "bridge_eva_outer";
-	locked = 1;
-	name = "Bridge EVA External Access"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "gX" = (
@@ -5956,28 +5927,16 @@
 /area/maintenance/bridge/aftstarboard)
 "jY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "bridge_eva_inner";
-	locked = 1;
-	name = "Bridge EVA Internal Access"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "jZ" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "bridge_eva_inner";
-	locked = 1;
-	name = "Bridge EVA Internal Access"
-	},
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "ka" = (
@@ -12359,10 +12318,10 @@
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
+	autoset_access = 0;
 	dir = 8;
 	name = "CE's Equipment Storage";
-	req_access = list("ACCESS_CHIEF_ENGINEER");
-	autoset_access = 0
+	req_access = list("ACCESS_CHIEF_ENGINEER")
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/window/reinforced{
@@ -13632,13 +13591,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "solar_bridge_inner";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
 "wr" = (
@@ -13663,13 +13615,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "solar_bridge_outer";
-	locked = 1;
-	name = "Engineering External Access"
-	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarbridge)
 "wu" = (
@@ -18339,15 +18285,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
-	autoset_access = 0;
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "aquila_shuttle_dock_inner";
-	locked = 1;
-	name = "Docking Port Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -18579,20 +18516,12 @@
 /area/crew_quarters/heads/office/psiadvisor)
 "Ug" = (
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
-	autoset_access = 0;
-	frequency = 1331;
-	icon_state = "closed";
-	id_tag = "aquila_shuttle_dock_outer";
-	locked = 1;
-	name = "Docking Port Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
-	},
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "Uk" = (

@@ -320,19 +320,13 @@
 /turf/simulated/wall/r_wall/hull,
 /area/maintenance/auxsolarstarboard)
 "aE" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "solar_starboard_outer";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarstarboard)
 "aF" = (
@@ -648,13 +642,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "bk" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "solar_starboard_inner";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -836,14 +823,8 @@
 /turf/simulated/wall/walnut,
 /area/vacant/chapel)
 "bF" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "auxdock_outer";
-	locked = 1;
-	name = "Auxiliary Docking Port Exterior"
-	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
 "bG" = (
@@ -1745,14 +1726,8 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/seconddeck/forestarboard)
 "du" = (
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "auxdock_inner";
-	locked = 1;
-	name = "Auxiliary Docking Port Interior"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
 "dv" = (
@@ -1773,17 +1748,13 @@
 /area/maintenance/auxsolarstarboard)
 "dy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/engineering{
-	icon_state = "closed";
-	locked = 0;
-	name = "Starboard Solar Access"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarstarboard)
 "dz" = (
@@ -14232,17 +14203,13 @@
 /area/maintenance/auxsolarport)
 "Ca" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/engineering{
-	icon_state = "closed";
-	locked = 0;
-	name = "Port Solar Access"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/auxsolarport)
 "Cb" = (
@@ -14860,13 +14827,6 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "solar_port_inner";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarport)
 "DT" = (
@@ -15063,14 +15023,8 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/external{
-	frequency = 1379;
-	icon_state = "closed";
-	id_tag = "solar_port_outer";
-	locked = 1;
-	name = "Engineering External Access"
-	},
 /obj/machinery/shield_diffuser,
+/obj/machinery/door/airlock/hololock/solgov,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/auxsolarport)
 "Et" = (

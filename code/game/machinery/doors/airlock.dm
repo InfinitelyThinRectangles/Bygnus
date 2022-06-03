@@ -234,6 +234,80 @@ var/list/airlock_overlays = list()
 /obj/machinery/door/airlock/glass/civilian
 	stripe_color = COLOR_CIVIE_GREEN
 
+/obj/machinery/door/airlock/hololock
+	name = "hololock"
+	desc = "A holographic barrier that allows one to pass without breaking atmospheric containment."
+	icon_state = "hololock"
+	icon = 'icons/obj/doors/hololock.dmi'
+	atmos_canpass = CANPASS_NEVER
+	paintable = 0
+	opacity = 0
+
+/obj/machinery/door/airlock/hololock/inherit_access_from_area()
+	..()
+	if(is_station_area(get_area(src)))
+		add_access_requirement(req_access, access_external_airlocks)
+
+/obj/machinery/door/airlock/hololock/on_update_icon(state=0, override=0)
+	if(connections in list(NORTH, SOUTH, NORTH|SOUTH))
+		if(connections in list(WEST, EAST, EAST|WEST))
+			set_dir(SOUTH)
+		else
+			set_dir(EAST)
+	else
+		set_dir(SOUTH)
+
+	switch(state)
+		if(0)
+			if(density)
+				icon_state = initial(icon_state)
+				state = AIRLOCK_CLOSED
+			else
+				icon_state = initial(icon_state) + "_open"
+				state = AIRLOCK_OPEN
+		if(AIRLOCK_OPEN)
+			icon_state = initial(icon_state) + "_open"
+		if(AIRLOCK_CLOSED)
+			icon_state = initial(icon_state)
+		if(AIRLOCK_OPENING, AIRLOCK_CLOSING, AIRLOCK_EMAG, AIRLOCK_DENY)
+			icon_state = ""
+
+/obj/machinery/door/airlock/hololock/do_animate(animation)
+	if(overlays)
+		overlays.Cut()
+
+	switch(animation)
+		if("opening")
+			flick(icon_state + "_opening", src)
+			update_icon(AIRLOCK_OPEN)
+		if("closing")
+			flick(icon_state + "_closing", src)
+			update_icon(AIRLOCK_CLOSED)
+		if("deny")
+			if(density && arePowerSystemsOn())
+				flick(icon_state + "_denied", src)
+				if(secured_wires)
+					playsound(loc, open_failure_access_denied, 50, 0)
+			update_icon(AIRLOCK_CLOSED)
+		else
+			update_icon()
+	return
+
+/obj/machinery/door/airlock/hololock/solgov
+	icon_state = "solgov"
+
+/obj/machinery/door/airlock/hololock/cygnus
+	icon_state = "cygnus"
+
+/obj/machinery/door/airlock/hololock/skrell
+	icon_state = "skrell"
+
+/obj/machinery/door/airlock/hololock/ascent
+	icon_state = "ascent"
+
+/obj/machinery/door/airlock/hololock/vox
+	icon_state = "vox"
+
 /obj/machinery/door/airlock/external
 	airlock_type = "External"
 	name = "External Airlock"
